@@ -17,10 +17,10 @@ struct Answer: Codable {
 
 class ResponseModel {
     
-    private let networkService: NetworkService
-    init(networkService: NetworkService) {
-        self.networkService = networkService
-    }
+    private let networkService = NetworkService()
+   // init(networkService: NetworkService) {
+   //     self.networkService = networkService
+   // }
     
     func getAnswer(completion: @escaping (Answer?) -> Void) {
         networkService.dataAnswerFetch(urlString: Config.baseURL) { (response, error) in
