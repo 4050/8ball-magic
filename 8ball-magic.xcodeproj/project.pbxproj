@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85348454271C7E12003E367D /* ResponseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85348453271C7E12003E367D /* ResponseView.swift */; };
 		85610654271C677200869EF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85610653271C677200869EF5 /* AppDelegate.swift */; };
 		85610656271C677200869EF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85610655271C677200869EF5 /* SceneDelegate.swift */; };
 		85610658271C677200869EF5 /* ResponseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85610657271C677200869EF5 /* ResponseViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		85348453271C7E12003E367D /* ResponseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseView.swift; sourceTree = "<group>"; };
 		85610650271C677200869EF5 /* 8ball-magic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "8ball-magic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85610653271C677200869EF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85610655271C677200869EF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		85610669271C679200869EF5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				85348453271C7E12003E367D /* ResponseView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85610658271C677200869EF5 /* ResponseViewController.swift in Sources */,
+				85348454271C7E12003E367D /* ResponseView.swift in Sources */,
 				85610654271C677200869EF5 /* AppDelegate.swift in Sources */,
 				85610670271C6BD100869EF5 /* ResponseModel.swift in Sources */,
 				8561066C271C6AF200869EF5 /* NetworkService.swift in Sources */,
