@@ -68,18 +68,18 @@ class ResponseView: UIView {
     }
     
     private func setupLayout() {
-           magicLabel.topAnchor.constraint(
-               equalTo: safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
-           magicLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 0).isActive = true
-           magicLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: 0).isActive = true
-
-           askLabel.topAnchor.constraint(equalTo: magicLabel.bottomAnchor, constant: 10).isActive = true
-           askLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 0).isActive = true
-           askLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: 0).isActive = true
-
-           answerLabel.topAnchor.constraint(equalTo: topAnchor, constant: 20).isActive = true
-           answerLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0).isActive = true
-           answerLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 0).isActive = true
-           answerLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: 0).isActive = true
-       }
+        magicLabel.topAnchor.constraint(
+            equalTo: safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
+        magicLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 0).isActive = true
+        magicLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: 0).isActive = true
+        
+        askLabel.topAnchor.constraint(equalTo: magicLabel.bottomAnchor, constant: 10).isActive = true
+        askLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 0).isActive = true
+        askLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: 0).isActive = true
+        
+        answerLabel.topAnchor.constraint(equalTo: topAnchor, constant: 20).isActive = true
+        answerLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0).isActive = true
+        answerLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 0).isActive = true
+        answerLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: 0).isActive = true
+    }
 }

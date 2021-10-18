@@ -43,7 +43,7 @@ class HardCodedAnswerView: UIView {
         super.init(coder: aDecoder)
         createSubviews()
     }
-
+    
     func createSubviews() {
         addSubview(textField)
         addSubview(textLabel)

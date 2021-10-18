@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct HardCodedAnswersModel {
+struct HardCodedAnswerModel {
     var motivationAnswers = ["JUST DO IT!!!", "YES!!!", "CHANGE YOUR MIND!!!", "KEEP MOVING!!!"]
     
     func saveAnswer(_ saveAnswer: String) {

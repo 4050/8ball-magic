@@ -72,9 +72,9 @@
 			children = (
 				85610671271C6CC700869EF5 /* Contants */,
 				8561066A271C689A00869EF5 /* Service */,
-				85610669271C679200869EF5 /* View */,
-				85610668271C678B00869EF5 /* Controller */,
 				85610667271C678300869EF5 /* Model */,
+				85610668271C678B00869EF5 /* Controller */,
+				85610669271C679200869EF5 /* View */,
 				85610653271C677200869EF5 /* AppDelegate.swift */,
 				85610655271C677200869EF5 /* SceneDelegate.swift */,
 				8561065C271C677500869EF5 /* Assets.xcassets */,
@@ -105,9 +105,9 @@
 		85610669271C679200869EF5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				85610659271C677200869EF5 /* Main.storyboard */,
 				85348453271C7E12003E367D /* ResponseView.swift */,
 				857DA458271DCF4E002536A6 /* HardCodedAnswerView.swift */,
+				85610659271C677200869EF5 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";

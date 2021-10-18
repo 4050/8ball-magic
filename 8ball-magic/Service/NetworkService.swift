@@ -7,16 +7,12 @@
 
 import Foundation
 
-protocol Networking {
-    func request(urlString: String, completion: @escaping (Data?, Error?) -> Void)
-}
-
 class NetworkService: Networking {
     func request(urlString: String, completion: @escaping (Data?, Error?) -> Void) {
         guard let urlString = URL(string: urlString) else { return }
         let request = URLRequest(url: urlString)
         URLSession.shared.dataTask(with: request, completionHandler: { (data, _, error) in
-                completion(data, error)
+            completion(data, error)
         }).resume()
     }
     
@@ -25,7 +21,7 @@ class NetworkService: Networking {
             if let error = error {
                 print("ERROR")
                 completion(nil, error)
-        }
+            }
             let decoder = JSONDecoder()
             guard let data = data else { return }
             let response = try? decoder.decode(Magic.self, from: data)
