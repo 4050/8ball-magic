@@ -9,4 +9,8 @@ import Foundation
 
 struct HardCodedAnswersModel {
     var motivationAnswers = ["JUST DO IT!!!", "YES!!!", "CHANGE YOUR MIND!!!", "KEEP MOVING!!!"]
+    
+    func saveAnswer(_ saveAnswer: String) {
+        UserDefaults.standard.set(saveAnswer, forKey: "answer")
+    }
 }

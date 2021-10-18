@@ -18,14 +18,21 @@ struct Answer: Codable {
 class ResponseModel {
     
     private let networkService = NetworkService()
-   // init(networkService: NetworkService) {
-   //     self.networkService = networkService
-   // }
+    // init(networkService: NetworkService) {
+    //     self.networkService = networkService
+    // }
+
     
-    func getAnswer(completion: @escaping (Answer?) -> Void) {
+    func getAnswer(completion: @escaping (String?) -> Void) {
         networkService.dataAnswerFetch(urlString: Config.baseURL) { (response, error) in
-            let responseAnswer = response
+            let responseAnswer: String?
+            if error != nil {
+                responseAnswer = UserDefaults.standard.string(forKey: "answer")
+            } else {
+                responseAnswer = response?.answer
+            }
             completion(responseAnswer)
         }
     }
 }
+

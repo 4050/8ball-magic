@@ -16,5 +16,4 @@ enum Text {
     static let iAmAMagicBall = "I AM A MAGIC BALL"
     static let askMeAnything = "ASK ME ANYTHING"
     static let chooseAnswer = "CHOOSE A PRE-PREPARED ANSWER:"
-
 }

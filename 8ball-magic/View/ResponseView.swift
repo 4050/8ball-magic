@@ -63,7 +63,7 @@ class ResponseView: UIView {
         setupLayout()
     }
     
-    func getAnswer(_ answer: String) {
+    func setAnswer(_ answer: String) {
         answerLabel.text = answer
     }
     

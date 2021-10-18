@@ -19,6 +19,7 @@
 		8561066C271C6AF200869EF5 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8561066B271C6AF200869EF5 /* NetworkService.swift */; };
 		85610670271C6BD100869EF5 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8561066F271C6BD100869EF5 /* ResponseModel.swift */; };
 		85610673271C6CD800869EF5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85610672271C6CD800869EF5 /* Constants.swift */; };
+		857DA459271DCF4E002536A6 /* HardCodedAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857DA458271DCF4E002536A6 /* HardCodedAnswerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		8561066B271C6AF200869EF5 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		8561066F271C6BD100869EF5 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
 		85610672271C6CD800869EF5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		857DA458271DCF4E002536A6 /* HardCodedAnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardCodedAnswerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +77,6 @@
 				85610667271C678300869EF5 /* Model */,
 				85610653271C677200869EF5 /* AppDelegate.swift */,
 				85610655271C677200869EF5 /* SceneDelegate.swift */,
-				85610659271C677200869EF5 /* Main.storyboard */,
 				8561065C271C677500869EF5 /* Assets.xcassets */,
 				8561065E271C677500869EF5 /* LaunchScreen.storyboard */,
 				85610661271C677500869EF5 /* Info.plist */,
@@ -104,7 +105,9 @@
 		85610669271C679200869EF5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				85610659271C677200869EF5 /* Main.storyboard */,
 				85348453271C7E12003E367D /* ResponseView.swift */,
+				857DA458271DCF4E002536A6 /* HardCodedAnswerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				85348456271C9374003E367D /* HardCodedAnswerModel.swift in Sources */,
 				8561066C271C6AF200869EF5 /* NetworkService.swift in Sources */,
 				85610656271C677200869EF5 /* SceneDelegate.swift in Sources */,
+				857DA459271DCF4E002536A6 /* HardCodedAnswerView.swift in Sources */,
 				85610673271C6CD800869EF5 /* Constants.swift in Sources */,
 				85348458271C9471003E367D /* HardCodedAnswerViewController.swift in Sources */,
 			);
