@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		85348454271C7E12003E367D /* ResponseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85348453271C7E12003E367D /* ResponseView.swift */; };
 		85348456271C9374003E367D /* HardCodedAnswerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85348455271C9374003E367D /* HardCodedAnswerModel.swift */; };
+		85348458271C9471003E367D /* HardCodedAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85348457271C9471003E367D /* HardCodedAnswerViewController.swift */; };
 		85610654271C677200869EF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85610653271C677200869EF5 /* AppDelegate.swift */; };
 		85610656271C677200869EF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85610655271C677200869EF5 /* SceneDelegate.swift */; };
 		85610658271C677200869EF5 /* ResponseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85610657271C677200869EF5 /* ResponseViewController.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		85348453271C7E12003E367D /* ResponseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseView.swift; sourceTree = "<group>"; };
 		85348455271C9374003E367D /* HardCodedAnswerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardCodedAnswerModel.swift; sourceTree = "<group>"; };
+		85348457271C9471003E367D /* HardCodedAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardCodedAnswerViewController.swift; sourceTree = "<group>"; };
 		85610650271C677200869EF5 /* 8ball-magic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "8ball-magic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85610653271C677200869EF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85610655271C677200869EF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				85610657271C677200869EF5 /* ResponseViewController.swift */,
+				85348457271C9471003E367D /* HardCodedAnswerViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				8561066C271C6AF200869EF5 /* NetworkService.swift in Sources */,
 				85610656271C677200869EF5 /* SceneDelegate.swift in Sources */,
 				85610673271C6CD800869EF5 /* Constants.swift in Sources */,
+				85348458271C9471003E367D /* HardCodedAnswerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
