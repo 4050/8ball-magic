@@ -22,10 +22,6 @@ class ResponseViewController: UIViewController {
         setupNavigationBar()
     }
     
-    func view() -> ResponseView {
-        return self.view as! ResponseView
-    }
-    
     func setupNavigationBar() {
         navigationController?.navigationBar.tintColor = .black
         navigationController?.navigationBar.backItem?.title = ""
@@ -43,7 +39,7 @@ class ResponseViewController: UIViewController {
         if motion == .motionShake {
             self.responseModel.getAnswer(completion: { answer in
                 DispatchQueue.main.asyncAfter(deadline: .now()) {
-                    self.view().setAnswer(answer ?? "")
+                    self.responseView.setAnswer(answer ?? "")
                 }
             })
         }

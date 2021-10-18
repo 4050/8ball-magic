@@ -16,19 +16,15 @@ class HardCodedAnswerViewController: UIViewController, UIPickerViewDelegate, UIP
     override func loadView() {
         view = hardCodedAnswerView
     }
-    
-    func view() -> HardCodedAnswerView {
-        return self.view as! HardCodedAnswerView
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         picker.delegate = self
         picker.dataSource = self
 
-        view().backgroundColor = .white
-        view().setHardCodedAnswer(UserDefaults.standard.string(forKey: "answer") ?? hardCodedAnswersModel.motivationAnswers[0])
-        view().setupInputView(picker)
+        view.backgroundColor = .white
+        hardCodedAnswerView.setHardCodedAnswer(UserDefaults.standard.string(forKey: "answer") ?? hardCodedAnswersModel.motivationAnswers[0])
+        hardCodedAnswerView.setupInputView(picker)
     }
 }
 
@@ -47,7 +43,7 @@ extension HardCodedAnswerViewController {
     
     public func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         hardCodedAnswersModel.saveAnswer(hardCodedAnswersModel.motivationAnswers[row])
-        view().setHardCodedAnswer(hardCodedAnswersModel.motivationAnswers[row])
+        hardCodedAnswerView.setHardCodedAnswer(hardCodedAnswersModel.motivationAnswers[row])
         self.view.endEditing(false)
     }
 }

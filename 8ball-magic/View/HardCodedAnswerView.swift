@@ -9,7 +9,7 @@ import UIKit
 
 class HardCodedAnswerView: UIView {
     
-    private var answerLabel: UILabel = {
+    private var textLabel: UILabel = {
         let label = UILabel()
         let maxSize = CGSize(width: 150, height: 300)
         let size = label.sizeThatFits(maxSize)
@@ -46,7 +46,7 @@ class HardCodedAnswerView: UIView {
 
     func createSubviews() {
         addSubview(textField)
-        addSubview(answerLabel)
+        addSubview(textLabel)
         setupLayout()
     }
     
@@ -59,11 +59,11 @@ class HardCodedAnswerView: UIView {
     }
     
     func setupLayout() {
-        answerLabel.topAnchor.constraint(equalTo:  safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
-        answerLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 0).isActive = true
-        answerLabel.rightAnchor.constraint(equalTo:  rightAnchor, constant: 0).isActive = true
+        textLabel.topAnchor.constraint(equalTo:  safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
+        textLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 0).isActive = true
+        textLabel.rightAnchor.constraint(equalTo:  rightAnchor, constant: 0).isActive = true
         
-        textField.topAnchor.constraint(equalTo: answerLabel.bottomAnchor, constant: 10).isActive = true
+        textField.topAnchor.constraint(equalTo: textLabel.bottomAnchor, constant: 10).isActive = true
         textField.leftAnchor.constraint(equalTo:  leftAnchor, constant: 10).isActive = true
         textField.rightAnchor.constraint(equalTo:  rightAnchor, constant: -10).isActive = true
     }
