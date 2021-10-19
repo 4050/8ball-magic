@@ -17,3 +17,7 @@ enum Text {
     static let askMeAnything = "ASK ME ANYTHING"
     static let chooseAnswer = "CHOOSE A PRE-PREPARED ANSWER:"
 }
+
+enum Key {
+    static let answer = "asnwer"
+}

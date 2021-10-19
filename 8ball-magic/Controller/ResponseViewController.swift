@@ -38,8 +38,9 @@ class ResponseViewController: UIViewController {
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
             self.responseModel.getAnswer(completion: { answer in
+                guard let answer = answer else { return }
                 DispatchQueue.main.asyncAfter(deadline: .now()) {
-                    self.responseView.setAnswer(answer ?? "")
+                    self.responseView.setAnswer(answer)
                 }
             })
         }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class NetworkService: Networking {
+class NetworkService {
     func request(urlString: String, completion: @escaping (Data?, Error?) -> Void) {
         guard let urlString = URL(string: urlString) else { return }
         let request = URLRequest(url: urlString)
